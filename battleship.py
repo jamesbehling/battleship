@@ -1,6 +1,7 @@
 from random import randint
 
 def print_board(board):
+  print "1 2 3 4 5"
   for row in board:
     print " ".join(row)
 
@@ -25,7 +26,7 @@ for x in range(5):
   board.append(["O"] * 5)
 
 num_ships = int(raw_input('How many ships: '))
-ship_row,ship_col = set_ship(num_ships) 
+ship_row,ship_col = set_ship(num_ships)
 
 print_board(board)
 
